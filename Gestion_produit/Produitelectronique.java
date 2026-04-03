@@ -1,18 +1,18 @@
 public class Produitelectronique extends Products{
     
-    private int garentie;
+    private int garantie;
     public Produitelectronique(String produit, double prix, int stock, int garantie) {
-        super(produit, prix, stock); 
-        // this.garantie = garantie; 
+        super(produit, prix, stock);
+        this.garantie = garantie; 
     }
     
 
-    public int getGarentie() {
-        return garentie;
+    public int getGarantie() {
+        return garantie;
     }
 
-    public void setGarentie(int garentie) {
-        this.garentie = garentie;
+    public void setGarantie(int garantie) {
+        this.garantie = garantie;
     }
 }
 

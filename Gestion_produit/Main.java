@@ -7,7 +7,13 @@ public class Main {
          for (int i = 0; i < products.size(); i++) {
              Products product = products.get(i);
              System.out.println(product.getProduit() + " - $" + product.getPrix() + " - Stock: " + product.getStock());
-         }
+        
+             if (product instanceof Produitelectronique){
+                Produitelectronique eProduitelectronique  = (Produitelectronique) product;
+                System.out.println("Garantie: " + eProduitelectronique.getGarantie() + " mois");
+             }
+             System.out.println();
+            }
 }
 }
  
